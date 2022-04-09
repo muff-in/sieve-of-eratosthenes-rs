@@ -1,0 +1,8 @@
+[package]
+name = "sieve-of-eratosthenes-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["muffin <notmuffin@tuta.io"]
+
+
+[dependencies]
