@@ -3,7 +3,6 @@ use std::cmp::Ordering;
 fn main() {
     println!("Input a integer: ");
 
-
     let mut user_input = String::new();
 
     io::stdin().read_line(&mut user_input)
@@ -20,16 +19,15 @@ fn main() {
     let non_prime_number = 1;
 
     match user_input.cmp(&non_prime_number) {
-        Ordering::Less => println!("Enter number greater than 1"),
-        Ordering::Equal => println!("Enter number greater than 1"),
+        Ordering::Less => println!("Enter a number greater than 1"),
+        Ordering::Equal => println!("Enter a number greater than 1"),
         Ordering::Greater => println!("All Prime Numbers till {} are \n{:?}", user_input, sieve_algorithm(user_input)),
     }
 }
 
-
-
-    fn sieve_algorithm(user_input: u32) -> Vec<u32>
-    {
+  
+fn sieve_algorithm(user_input: u32) -> Vec<u32>
+{
 
         let mut bool_vec: Vec<bool> = Vec::new();
 
